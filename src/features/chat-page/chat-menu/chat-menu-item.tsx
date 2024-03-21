@@ -58,7 +58,7 @@ export const ChatMenuItem: FC<ChatMenuItemProps> = (props) => {
           >
             <BookmarkCheck size={18} />
             <span>
-              {props.chatThread.bookmarked ? "Remove bookmark" : ""}
+              {props.chatThread.bookmarked ? "Remove bookmark" : "Bookmark"}
             </span>
           </DropdownMenuItemWithIcon>
           <DropdownMenuItemWithIcon
