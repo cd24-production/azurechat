@@ -34,9 +34,6 @@ export const LogIn: FC<LoginProps> = (props) => {
           </Avatar>
           <span className="text-primary">{AI_NAME}</span>
         </CardTitle>
-        <CardDescription>
-          Login in with your GitHub or Microsoft 365 account
-        </CardDescription>
       </CardHeader>
 
     </Card>
