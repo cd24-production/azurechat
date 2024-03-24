@@ -33,7 +33,7 @@ export const AddPromptSlider: FC<SliderProps> = (props) => {
   const PublicSwitch = () => {
     if (data === undefined || data === null) return null;
 
-    if (true) {
+    if (data?.user?.isAdmin) {
       return (
         <div className="flex items-center space-x-2">
           <Switch name="isPublished" defaultChecked={prompt.isPublished} />
@@ -64,6 +64,7 @@ export const AddPromptSlider: FC<SliderProps> = (props) => {
               {formState && formState.status === "OK" ? null : (
                 <>
                   {formState &&
+            
                     formState.errors.map((error, index) => (
                       <div key={index} className="text-red-500">
                         {error.message}
